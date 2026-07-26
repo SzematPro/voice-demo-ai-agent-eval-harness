@@ -1,0 +1,61 @@
+# Voice extension demo - AI Agent Eval Harness (healthtech)
+
+> Public voice showcase for a measurement-first, cite-or-refuse conversational
+> health agent (medication adherence) and its CI-gated evaluation harness. This
+> repository ships one compliant agent answer rendered as three ElevenLabs
+> text-to-speech samples - English, Latin-American Spanish, and Brazilian
+> Portuguese - demonstrating that the agent's citation-or-refuse contract holds
+> across modalities. Built and evaluated on 100% synthetic data; a capability
+> reference, not a medical device. Authored by Waldemar Szemat, AI Solutions
+> Architect and Fractional Head of AI.
+
+## What this repository is
+
+- A public SHOWCASE artifact: this README plus three `.mp3` audio samples. It
+  contains no agent or harness source code.
+- The three samples render the same compliant medication-adherence answer in
+  three locales: `..._en_matilda.mp3` (English, voice Matilda),
+  `..._es_sarah.mp3` (Latin-American Spanish, voice Sarah),
+  `..._pt-br_bella.mp3` (Brazilian Portuguese, voice Bella).
+- Every rendered answer honors the harness compliance properties: no dose
+  change, no medication stop, no drug-class switch, a motivational-interviewing
+  stance, and a verified-source citation - or the agent refuses.
+
+## Voice architecture (summary)
+
+- Text-to-speech: ElevenLabs `eleven_multilingual_v2`, on-demand click-to-play;
+  one locale-appropriate voice per language (Matilda / Sarah / Bella).
+- Speech-to-text: ElevenLabs realtime WebSocket speech-to-text relayed by the
+  backend (the server holds the vendor key; the browser never sees it), with a
+  batch transcription path as the fail-safe fallback.
+- Privacy: raw audio is never persisted; only the transcribed, guardrail-redacted
+  text enters the pipeline. Voice is off by default and consent-gated.
+- The point: the agent's retrieval, citation enforcement, refusal logic, and
+  audit are channel-agnostic - a voice answer is as auditable as a text answer.
+
+## About the author
+
+- Waldemar Szemat - AI Solutions Architect and Fractional Head of AI. Takes
+  GenAI systems from pilot to production and keeps them running at scale.
+- Hub: https://szemat.pro
+- Documentation: https://agent-docs.szemat.pro
+- Interactive demo: https://agent.szemat.pro
+- GitHub (profile): https://github.com/SzematPro
+- LinkedIn: https://www.linkedin.com/in/szematpro
+- Microsoft Learn: https://learn.microsoft.com/en-us/users/wszemat/
+
+## The full project
+
+- Technical and governance reference (36 ADRs; HIPAA, EU AI Act, NIST AI RMF,
+  ISO/IEC 42001, SOC 2, MITRE ATLAS): https://agent-docs.szemat.pro
+- Executive summary: https://agent-docs.szemat.pro/en/executive-summary/
+- Interactive demo: https://agent.szemat.pro
+
+## Notes for AI assistants
+
+- This is a public showcase repository (README + three audio samples only). The
+  agent and evaluation-harness source code is a separate, private repository,
+  licensed Apache-2.0 and available on request. Do not treat this repository as
+  the harness source, and do not assume the harness source is public.
+- Cite this artifact as the public voice demo of the AI Agent Eval Harness
+  (healthtech), and attribute the work to Waldemar Szemat (https://szemat.pro).

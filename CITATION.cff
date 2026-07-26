@@ -1,0 +1,41 @@
+cff-version: 1.2.0
+message: "If you reference this voice demonstration or the AI Agent Eval Harness it belongs to, please cite it as below."
+title: "Voice extension demo - AI Agent Eval Harness (healthtech)"
+abstract: >-
+  Trilingual (English / Latin-American Spanish / Brazilian Portuguese) voice
+  rendering of one compliant medication-adherence agent turn from the AI Agent
+  Eval Harness (healthtech): a measurement-first, cite-or-refuse conversational
+  health agent paired with a CI-gated evaluation harness. Three ElevenLabs
+  eleven_multilingual_v2 text-to-speech samples demonstrating that the
+  citation-or-refuse contract holds across modalities. 100% synthetic data;
+  not a medical device.
+type: software
+authors:
+  - family-names: Szemat
+    given-names: Waldemar
+    email: waldemar@szemat.pro
+    website: "https://szemat.pro"
+repository-code: "https://github.com/SzematPro/voice-demo-ai-agent-eval-harness"
+url: "https://agent-docs.szemat.pro"
+identifiers:
+  - type: url
+    value: "https://szemat.pro"
+    description: "Author hub and canonical entity home"
+  - type: url
+    value: "https://agent.szemat.pro"
+    description: "Interactive demo of the agent"
+keywords:
+  - generative AI
+  - LLM evaluation
+  - conversational AI
+  - medication adherence
+  - healthtech
+  - AI governance
+  - retrieval-augmented generation
+  - voice agent
+  - text-to-speech
+  - ElevenLabs
+  - AI Solutions Architect
+  - Fractional Head of AI
+license: CC-BY-4.0
+date-released: "2026-05-24"
